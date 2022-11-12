@@ -1,0 +1,131 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url("../images/gba.jpg");
+}
+
+@font-face {
+    font-family: 'pokedex';
+    src: url('../font/Pokemon\ Solid.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+@font-face {
+    font-family: 'unknown';
+    src: url('../font/annone.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+.pokeTitle{
+    font-family:pokedex;
+    font-weight:300;
+    font-size: 3rem;
+    color: #F7C505;
+    -webkit-text-stroke: .2rem #365DA5;
+    align-self: center;
+}
+.content{
+    padding: 1rem;
+    background-color:#c82a1f;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:992px){
+    .content{
+        max-width: 992px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+.content h1{
+    margin: 0;
+}
+
+.pokemons{
+    list-style: none;
+    padding:0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+@media screen and (min-width:215px){
+    .pokemons{
+        grid-template-columns: 1fr;
+    }
+    .content{
+        max-width: 576px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+
+
+@media screen and (min-width:375px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr;
+    }
+    .content{
+        max-width: 576px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+@media screen and (min-width:576px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .content{
+        max-width: 992px;
+        margin: 1rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+@media screen and (min-width:992px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.button{
+    padding: 1rem;
+    background-color: #c82a1f;
+    border-radius: 1rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    color: white;
+    font-weight: 600;
+}
+.button:hover{
+    background-color: #81140d;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#pokeName{
+    border-radius: 1rem;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,112 @@
+
+.pokemon{
+    margin: .5rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    border-bottom: 2px solid rgb(93, 90, 90);
+    border-right:  2px solid rgb(83, 80, 80);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+}
+.pokemon .number{
+    color: black;
+    opacity: .25;
+    text-align: right;
+    font-size: 0.7rem;
+}
+.pokemon .detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.types{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.type{
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    margin: 0.125rem;
+    border-radius: 1rem;
+    text-align: center;
+    filter: brightness(1.25);
+}
+
+.nameCrypto{
+    font-family: unknown;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.name{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.pokemon .detail img{
+    max-width: 100%;
+    height: 70px;
+    align-self: flex-end;
+}
+
+.normal{
+    background-color: #A8A878
+}
+.fire{
+    background-color:#F08030;
+}         
+.water{
+    background-color:	#6890F0
+}
+.electric{
+    background-color:#F8D030;
+}         
+.grass{
+    background-color:#78C850;
+}         
+.ice{
+    background-color: #98D8D8
+}
+.fighting{
+    background-color:#C03028;
+}         
+.poison{
+    background-color: #A040A0
+}
+.ground{
+    background-color: #E0C068
+}	
+.flying{
+    background-color: #A890F0
+}	
+.psychic{
+    background-color: #F85888
+}	
+.bug{
+    background-color: #A8B820
+}	
+.rock{
+    background-color: #B8A038
+}	
+.ghost{
+    background-color: #705898
+}	
+.dragon{
+    background-color: #7038F8
+}	
+.dark{
+    background-color: #705848
+}	
+.steel{
+    background-color: #B8B8D0
+}	
+.fairy{
+    background-color: #EE99AC
+}	
